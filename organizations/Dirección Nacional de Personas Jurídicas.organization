@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Dirección Nacional de Personas Jurídicas" description="La organización ACME es un ejemplo de una jerarquía típica. Puede ser utilizado para el desarrollo.">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="april.sanchez">
+      <firstName>April</firstName>
+      <lastName>Sanchez</lastName>
+      <title>Mrs</title>
+      <jobTitle>Compensation specialist</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>april.sanchez@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="grupo9.admin">
+      <firstName>Grupo</firstName>
+      <lastName>9</lastName>
+      <title>Mr</title>
+      <jobTitle>Admin</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>grupo9.admin@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="empleado-mesa-de-entradas">
+      <displayName>Empleado de Mesa de Entradas</displayName>
+      <description></description>
+    </role>
+    <role name="escribano-area-legales">
+      <displayName>Escribano del Área Legales</displayName>
+    </role>
+    <role name="admin">
+      <displayName>Admin</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Dirección Nacional de Personas Jurídicas">
+      <displayName>Dirección Nacional de Personas Jurídicas</displayName>
+      <description>Dirección Nacional de Personas Jurídicas</description>
+    </group>
+    <group name="Mesa de entradas" parentPath="/Dirección Nacional de Personas Jurídicas">
+      <displayName>Mesa de entradas</displayName>
+      <description>Este grupo representa la Mesa de entradas de la Dirección Nacional de Personas Jurídicas</description>
+    </group>
+    <group name="Legales" parentPath="/Dirección Nacional de Personas Jurídicas">
+      <displayName>Legales</displayName>
+      <description>Este grupo representa el área de Legales de la Dirección Nacional de Personas Jurídicas</description>
+    </group>
+    <group name="Admin" parentPath="/Dirección Nacional de Personas Jurídicas">
+      <displayName>Admin</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>april.sanchez</userName>
+      <roleName>empleado-mesa-de-entradas</roleName>
+      <groupName>Dirección Nacional de Personas Jurídicas</groupName>
+    </membership>
+    <membership>
+      <userName>grupo9.admin</userName>
+      <roleName>admin</roleName>
+      <groupName>Admin</groupName>
+      <groupParentPath>/Dirección Nacional de Personas Jurídicas</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
