@@ -77,3 +77,6 @@ node_modules/
 /web_fragments/*/*.js
 !/web_widgets/*/*.ctrl.js
 /database_connectors_properties
+
+# Readme
+.README.md.html
