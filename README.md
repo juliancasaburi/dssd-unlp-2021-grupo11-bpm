@@ -1,6 +1,6 @@
-# dssd-unlp-2021-bpm
+# dssd-unlp-2021-grupo11-bpm
 
-**Grupo 9**
+**Grupo 11**
 
 Repositorio para versionar el Proceso de [Bonita Open Solution](https://www.bonitasoft.com/)
 
