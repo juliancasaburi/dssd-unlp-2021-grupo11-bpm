@@ -27,10 +27,11 @@
       </metaDatas>
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
     </user>
-    <user userName="grupo9.admin">
+    <user userName="grupo11.admin">
       <firstName>Grupo</firstName>
-      <lastName>9</lastName>
+      <lastName>11</lastName>
       <title>Mr</title>
       <jobTitle>Admin</jobTitle>
       <manager></manager>
@@ -52,7 +53,17 @@
         <metaData name="Facebook"/>
       </metaDatas>
       <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
+      <password encrypted="false">grupo11</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="apoderado.test">
+      <firstName>Apoderado</firstName>
+      <lastName>Test</lastName>
+      <title>Sr.</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">grupo11</password>
       <customUserInfoValues/>
     </user>
   </users>
@@ -66,6 +77,9 @@
     </role>
     <role name="admin">
       <displayName>Admin</displayName>
+    </role>
+    <role name="apoderado">
+      <displayName>Apoderado</displayName>
     </role>
   </roles>
   <groups>
@@ -84,6 +98,9 @@
     <group name="Admin" parentPath="/Dirección Nacional de Personas Jurídicas">
       <displayName>Admin</displayName>
     </group>
+    <group name="apoderado" parentPath="/Dirección Nacional de Personas Jurídicas">
+      <displayName>Apoderado</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -92,9 +109,15 @@
       <groupName>Dirección Nacional de Personas Jurídicas</groupName>
     </membership>
     <membership>
-      <userName>grupo9.admin</userName>
+      <userName>grupo11.admin</userName>
       <roleName>admin</roleName>
       <groupName>Admin</groupName>
+      <groupParentPath>/Dirección Nacional de Personas Jurídicas</groupParentPath>
+    </membership>
+    <membership>
+      <userName>apoderado.test</userName>
+      <roleName>apoderado</roleName>
+      <groupName>apoderado</groupName>
       <groupParentPath>/Dirección Nacional de Personas Jurídicas</groupParentPath>
     </membership>
   </memberships>

@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_D_yDsA0pEeyMWNmCM-O3tg" name="RegistroDeSociedadAnonimaGrupo11Diagrama" author="jc" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_D_yDsQ0pEeyMWNmCM-O3tg" name="Registro de Sociedad Anónima">
-      <elements xmi:type="process:Lane" xmi:id="_xfdJcBHFEeyJurGPsxsX6w" name="Apoderado">
+      <elements xmi:type="process:Lane" xmi:id="_xfdJcBHFEeyJurGPsxsX6w" name="Apoderado" actor="_5sRBsBeKEeysAPdnhpesKQ">
         <elements xmi:type="process:StartEvent" xmi:id="_bxtn0A0pEeyMWNmCM-O3tg" name="Inicio" outgoing="_D_yDyA0pEeyMWNmCM-O3tg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D_yDtA0pEeyMWNmCM-O3tg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D_yDtQ0pEeyMWNmCM-O3tg" name="" content="" returnTypeFixed="true"/>
@@ -47,7 +47,9 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_HOjCBRZ6EeyizpHOufPl4w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_HOjCBxZ6EeyizpHOufPl4w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_HOjCBhZ6EeyizpHOufPl4w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <BoundaryIntermediateEvents xmi:type="process:BoundaryTimerEvent" xmi:id="_hRBFYBZ6EeyizpHOufPl4w" name="Plazo de subsanación indicado en el email" outgoing="_FsF_cBc4EeydQ9O-p9lJOQ"/>
+          <BoundaryIntermediateEvents xmi:type="process:BoundaryTimerEvent" xmi:id="_hRBFYBZ6EeyizpHOufPl4w" name="Plazo de subsanación indicado en el email" outgoing="_FsF_cBc4EeydQ9O-p9lJOQ">
+            <condition xmi:type="expression:Expression" xmi:id="_-peikBeKEeysAPdnhpesKQ" name="14 días: 00:00:00" content="1209600000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
+          </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_IMAIyRZ6EeyizpHOufPl4w">
             <targetForm xmi:type="expression:Expression" xmi:id="_IMAIyhZ6EeyizpHOufPl4w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
@@ -241,7 +243,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Za0zgA0qEey53pgTA4dkHg" name="Es incorrecta" target="_7rVsMBTGEeyu34YKztTfzQ" source="_udCMkA0rEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Za1akA0qEey53pgTA4dkHg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_uTCjEQ0rEey53pgTA4dkHg" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_uTCjEQ0rEey53pgTA4dkHg" name="true == true" content="true == true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_AsVEAA0rEey53pgTA4dkHg" target="__jFkAA0qEey53pgTA4dkHg" source="_eA24kA0sEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_AsVEAQ0rEey53pgTA4dkHg"/>
@@ -249,7 +251,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_KrhRAA0rEey53pgTA4dkHg" name="El trámite es inválido" target="_XnyI8BTHEeyu34YKztTfzQ" source="__jFkAA0qEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_KrhRAQ0rEey53pgTA4dkHg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_KrhRAg0rEey53pgTA4dkHg" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_KrhRAg0rEey53pgTA4dkHg" name="true == true" content="true == true" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_rGDNMA0sEey53pgTA4dkHg" name="El trámite es válido" target="_oVZDcA0sEey53pgTA4dkHg" source="__jFkAA0qEey53pgTA4dkHg" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_rGDNMQ0sEey53pgTA4dkHg"/>
@@ -323,9 +325,10 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_FsF_cRc4EeydQ9O-p9lJOQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_FsF_chc4EeydQ9O-p9lJOQ" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_D_yDyw0pEeyMWNmCM-O3tg" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_D_yDyw0pEeyMWNmCM-O3tg" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor"/>
       <actors xmi:type="process:Actor" xmi:id="_uBsmUA0pEey53pgTA4dkHg" name="empleado-mesa-entradas"/>
       <actors xmi:type="process:Actor" xmi:id="_5OIpkA0pEey53pgTA4dkHg" name="escribano-area-legales"/>
+      <actors xmi:type="process:Actor" xmi:id="_5sRBsBeKEeysAPdnhpesKQ" name="apoderado" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_D_yDzA0pEeyMWNmCM-O3tg"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_D_yDzQ0pEeyMWNmCM-O3tg">
         <name xmi:type="expression:Expression" xmi:id="_D_yDzg0pEeyMWNmCM-O3tg" name="" content="" returnTypeFixed="true"/>
