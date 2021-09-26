@@ -29,7 +29,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="grupo11.admin">
+    <user userName="grupo11.admin@acme.com">
       <firstName>Grupo</firstName>
       <lastName>11</lastName>
       <title>Mr</title>
@@ -109,7 +109,7 @@
       <groupName>Dirección Nacional de Personas Jurídicas</groupName>
     </membership>
     <membership>
-      <userName>grupo11.admin</userName>
+      <userName>grupo11.admin@acme.com</userName>
       <roleName>admin</roleName>
       <groupName>Admin</groupName>
       <groupParentPath>/Dirección Nacional de Personas Jurídicas</groupParentPath>
