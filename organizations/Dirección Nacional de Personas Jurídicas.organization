@@ -2,15 +2,15 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Dirección Nacional de Personas Jurídicas" description="La organización ACME es un ejemplo de una jerarquía típica. Puede ser utilizado para el desarrollo.">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="april.sanchez">
-      <firstName>April</firstName>
-      <lastName>Sanchez</lastName>
-      <title>Mrs</title>
-      <jobTitle>Compensation specialist</jobTitle>
+    <user userName="empleadomesa.test@acme.com">
+      <firstName>EmpleadoMesa</firstName>
+      <lastName>Test</lastName>
+      <title>Mr</title>
+      <jobTitle>Empleado de mesa de entradas</jobTitle>
       <manager></manager>
       <personalData/>
       <professionalData>
-        <email>april.sanchez@acme.com</email>
+        <email>empleadomesa.test@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -26,7 +26,7 @@
         <metaData name="Facebook"/>
       </metaDatas>
       <enabled>true</enabled>
-      <password encrypted="false">bpm</password>
+      <password encrypted="false">grupo11</password>
       <customUserInfoValues/>
     </user>
     <user userName="grupo11.admin@acme.com">
@@ -56,13 +56,26 @@
       <password encrypted="false">grupo11</password>
       <customUserInfoValues/>
     </user>
-    <user userName="apoderado.test">
+    <user userName="apoderado.test@acme.com">
       <firstName>Apoderado</firstName>
       <lastName>Test</lastName>
       <title>Sr.</title>
       <manager></manager>
       <personalData/>
       <professionalData/>
+      <password encrypted="false">grupo11</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="escribano.test@acme.com">
+      <firstName>Escribano</firstName>
+      <lastName>Test</lastName>
+      <title>Mr</title>
+      <jobTitle>Escribano del área de legales</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>escribano.test@acme.com</email>
+      </professionalData>
       <password encrypted="false">grupo11</password>
       <customUserInfoValues/>
     </user>
@@ -104,7 +117,7 @@
   </groups>
   <memberships>
     <membership>
-      <userName>april.sanchez</userName>
+      <userName>empleadomesa.test@acme.com</userName>
       <roleName>empleado-mesa-de-entradas</roleName>
       <groupName>Dirección Nacional de Personas Jurídicas</groupName>
     </membership>
@@ -115,10 +128,15 @@
       <groupParentPath>/Dirección Nacional de Personas Jurídicas</groupParentPath>
     </membership>
     <membership>
-      <userName>apoderado.test</userName>
+      <userName>apoderado.test@acme.com</userName>
       <roleName>apoderado</roleName>
       <groupName>apoderado</groupName>
       <groupParentPath>/Dirección Nacional de Personas Jurídicas</groupParentPath>
+    </membership>
+    <membership>
+      <userName>escribano.test@acme.com</userName>
+      <roleName>escribano-area-legales</roleName>
+      <groupName>Dirección Nacional de Personas Jurídicas</groupName>
     </membership>
   </memberships>
 </organization:Organization>
