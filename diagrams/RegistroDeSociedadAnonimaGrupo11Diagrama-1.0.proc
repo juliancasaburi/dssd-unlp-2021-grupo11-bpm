@@ -378,13 +378,13 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_LSnisQ0qEey53pgTA4dkHg"/>
         <condition xmi:type="expression:Expression" xmi:id="_uTCjEg0rEey53pgTA4dkHg" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_Uwub4A0qEey53pgTA4dkHg" name="Es correcta" target="_v9kOABHHEeyJurGPsxsX6w" source="_udCMkA0rEey53pgTA4dkHg">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_Uwub4A0qEey53pgTA4dkHg" name="Es correcta" target="_v9kOABHHEeyJurGPsxsX6w" source="_udCMkA0rEey53pgTA4dkHg" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Uwub4Q0qEey53pgTA4dkHg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_uTCjEA0rEey53pgTA4dkHg" name="estado_evaluacion == &quot;Aprobada por empleado-mesa-de-entradas&quot;" content="estado_evaluacion == &quot;Aprobada por empleado-mesa-de-entradas&quot;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_uTCjEA0rEey53pgTA4dkHg" name="estado_evaluacion == &quot;Aprobado por empleado-mesa-de-entradas&quot;" content="estado_evaluacion == &quot;Aprobado por empleado-mesa-de-entradas&quot;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_Za0zgA0qEey53pgTA4dkHg" name="Es incorrecta" target="_7rVsMBTGEeyu34YKztTfzQ" source="_udCMkA0rEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Za1akA0qEey53pgTA4dkHg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_uTCjEQ0rEey53pgTA4dkHg" name="estado_evaluacion == &quot;Rechazada por empleado-mesa-de-entradas&quot;" content="estado_evaluacion == &quot;Rechazada por empleado-mesa-de-entradas&quot;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_uTCjEQ0rEey53pgTA4dkHg" name="estado_evaluacion == &quot;Rechazado por empleado-mesa-de-entradas&quot;" content="estado_evaluacion == &quot;Rechazado por empleado-mesa-de-entradas&quot;" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_AsVEAA0rEey53pgTA4dkHg" target="__jFkAA0qEey53pgTA4dkHg" source="_eA24kA0sEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_AsVEAQ0rEey53pgTA4dkHg"/>
@@ -392,11 +392,19 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_KrhRAA0rEey53pgTA4dkHg" name="El trámite es inválido" target="_XnyI8BTHEeyu34YKztTfzQ" source="__jFkAA0qEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_KrhRAQ0rEey53pgTA4dkHg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_KrhRAg0rEey53pgTA4dkHg" name="true == true" content="true == true" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_KrhRAg0rEey53pgTA4dkHg" name="estado_evaluacion == &quot;Rechazado por escribano-area-legales&quot;" content="estado_evaluacion == &quot;Rechazado por escribano-area-legales&quot;" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_izypwCF9Eey4IZyr5ymsjw" name="estado_evaluacion" dataType="_D_yD4Q0pEeyMWNmCM-O3tg">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_izypwSF9Eey4IZyr5ymsjw" content=""/>
+          </referencedElements>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_rGDNMA0sEey53pgTA4dkHg" name="El trámite es válido" target="_oVZDcA0sEey53pgTA4dkHg" source="__jFkAA0qEey53pgTA4dkHg" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_rGDNMQ0sEey53pgTA4dkHg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_rGDNMg0sEey53pgTA4dkHg" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_rGDNMg0sEey53pgTA4dkHg" name="estado_evaluacion == &quot;Aprobado por escribano-area-legales&quot;" content="estado_evaluacion == &quot;Aprobado por escribano-area-legales&quot;" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_kXB-ICF9Eey4IZyr5ymsjw" name="estado_evaluacion" dataType="_D_yD4Q0pEeyMWNmCM-O3tg">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_kXB-ISF9Eey4IZyr5ymsjw" content=""/>
+          </referencedElements>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_SfbAQA0tEey53pgTA4dkHg" target="_Nw8e8A0tEey53pgTA4dkHg" source="_oVZDcA0sEey53pgTA4dkHg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_SfbAQQ0tEey53pgTA4dkHg"/>
