@@ -442,6 +442,9 @@
       <data xmi:type="process:Data" xmi:id="_VA7jkCGNEey4IZyr5ymsjw" name="numero_expediente" dataType="_D_yD4Q0pEeyMWNmCM-O3tg">
         <defaultValue xmi:type="expression:Expression" xmi:id="_VA7jkSGNEey4IZyr5ymsjw" content=""/>
       </data>
+      <data xmi:type="process:Data" xmi:id="_O6ZrECfsEey3NZ3qyBMFbg" name="numero_hash" dataType="_D_yD4Q0pEeyMWNmCM-O3tg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_O6ZrESfsEey3NZ3qyBMFbg" content=""/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_D_yDxA0pEeyMWNmCM-O3tg">
         <targetForm xmi:type="expression:Expression" xmi:id="_8ldhFiJ6EeyedeovCQb2XQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
