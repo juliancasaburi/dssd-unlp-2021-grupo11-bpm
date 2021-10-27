@@ -617,11 +617,6 @@
       <actors xmi:type="process:Actor" xmi:id="_5OIpkA0pEey53pgTA4dkHg" name="escribano-area-legales"/>
       <actors xmi:type="process:Actor" xmi:id="_5sRBsBeKEeysAPdnhpesKQ" name="apoderado" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_D_yDzA0pEeyMWNmCM-O3tg"/>
-      <documents xmi:type="process:Document" xmi:id="_J1UKUDHhEey03K0u2MSwCw" name="emailFinalizacion" defaultValueIdOfDocumentStore="emailFinalizacion" documentType="INTERNAL">
-        <mimeType xmi:type="expression:Expression" xmi:id="_J1UxYDHhEey03K0u2MSwCw" name="html" content="html" returnTypeFixed="true"/>
-        <url xmi:type="expression:Expression" xmi:id="_J1UxYTHhEey03K0u2MSwCw" name="" content="" returnTypeFixed="true"/>
-        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_J1UxYjHhEey03K0u2MSwCw" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
-      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_D_yDzQ0pEeyMWNmCM-O3tg">
         <name xmi:type="expression:Expression" xmi:id="_D_yDzg0pEeyMWNmCM-O3tg" name="" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_D_yDzw0pEeyMWNmCM-O3tg" content="" returnTypeFixed="true"/>
