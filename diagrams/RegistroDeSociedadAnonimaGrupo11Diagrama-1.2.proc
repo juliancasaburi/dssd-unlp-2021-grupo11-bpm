@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_D_yDsA0pEeyMWNmCM-O3tg" name="RegistroDeSociedadAnonimaGrupo11Diagrama" author="jc" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_D_yDsQ0pEeyMWNmCM-O3tg" name="Registro de Sociedad Anónima">
+  <process:MainProcess xmi:id="_D_yDsA0pEeyMWNmCM-O3tg" name="RegistroDeSociedadAnonimaGrupo11Diagrama" version="1.2" author="jc" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_D_yDsQ0pEeyMWNmCM-O3tg" name="Registro de Sociedad Anónima" version="1.2">
       <elements xmi:type="process:Lane" xmi:id="_xfdJcBHFEeyJurGPsxsX6w" name="Apoderado" actor="_5sRBsBeKEeysAPdnhpesKQ">
         <elements xmi:type="process:StartEvent" xmi:id="_bxtn0A0pEeyMWNmCM-O3tg" name="Inicio" outgoing="_D_yDyA0pEeyMWNmCM-O3tg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D_yDtA0pEeyMWNmCM-O3tg" name="" content="" returnTypeFixed="true"/>
